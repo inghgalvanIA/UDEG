@@ -16,16 +16,35 @@
 
         <div class="col-8 col-sx-8 col-sm-8 col-md-8 col-lg-8">
             <h1>Universidad de Guadalajara virtual</h1>
-            <h2>Héctor Rosendo Galvén Rivas</h2>
+            <h2>Héctor Rosendo Galván Rivas</h2>
             <h2>Fundamentos de programación</h2>
             <h3>Programa que calcula el area de un cono</h3>
             <a href="https://www.youtube.com/watch?v=iWnLNGNh49o&t=108s">Referencia: Hallar el ÁREA TOTAL de un CONO</a>
         </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col" >
+                <form action="" id="miformulario">
+                    <label for="">Ingrese radio (r)</label><br>
+                    <input type="number" id="radio" placeholder="Radio del cono"> <br>
+                    <label for="">Ingrese altura (h)</label><br>
+                    <input type="number" id="altura" placeholder="Altura del cono"> <br>
+                    <br>
+                    <button type="button" onclick="cono();">calcular el area</button>
+                    <button onclick="limpiar();">Limpiar campos</button><br>
+                    <br>
+                    <a>El area total es :<span id="el_resultado_area"></span></a><br>
+                    <a>El volumen total es :<span id="el_resultado_volumen"></span></a>
 
+                </form>
+            </div>
+        </div>
+
+     
 
     </div>
     </div>
-    <script src="area_cono.js"></script>
+    <script src="area_cono_aut.js"></script>
 </body>
 </html>
