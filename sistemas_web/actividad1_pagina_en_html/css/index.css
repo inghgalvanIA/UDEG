@@ -1,0 +1,152 @@
+/* general */
+#footer{
+    background: orange;
+}
+
+h1{
+    text-align: center;
+    background-color: orange;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: orange;
+    size: 10px;
+    padding-top: 10px;
+}
+h3{
+    text-align: center;
+    background-color: orange;
+    color: white;
+}
+
+h5{
+    background-color: orange;
+    color: white;
+    text-align: center;
+}
+
+/* index */
+
+#banner{
+    width: 100%;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+
+}
+/* descripcion */
+#titulo_desc_2{
+    text-align: center;
+}
+
+#titulo_desc_1{
+    text-align: center;
+}
+#imagen_desc{
+    width: 120%;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+}
+
+p{
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+/* carussel descripcion */
+
+.carousel{
+    width: 100%;
+    overflow: scroll;
+    padding: 30px;
+    position: relative;
+}
+
+.carousel__container{
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+}
+
+.carousel__item{
+    background-color: orange;
+    width: 200px;
+    height:  250px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center left;
+}
+
+.carousel__item:hover ~ .carousel__item{
+    transform: translate3d(100px,0,0);
+}
+
+.carousel__container:hover .carousel__item{
+opacity: 0.3;
+}
+
+.carousel__container:hover .carousel__item:hover{
+transform: scale(1.5);
+opacity: 1;
+}
+
+.carousel__item__img{
+    width: 200px;
+    height: 250px;
+}
+
+
+/* testimonios */
+
+#use_1_test{
+    width: 100%;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+#card_1{
+width: 100%;
+display: block;    
+margin-right: auto;
+margin-left: auto;
+}
+
+#card_2{
+width: 100%;
+display: block;    
+margin-left: auto;
+}
+
+/* historia */
+
+#slime{
+    width: 500px;
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto;
+    padding-bottom: 15px;
+}
+
+/* formulario */
+
+#formulario_{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#video{
+    width: 85%;
+    margin-left: auto;  
+    margin-right: auto; 
+    margin: auto;
+    padding-left: 150px;
+}

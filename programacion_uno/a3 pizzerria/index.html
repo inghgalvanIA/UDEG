@@ -1,0 +1,99 @@
+
+<!-- ---------------inicio archivo html con nombre indez.html---------------------------
+
+Hector Rosendo Galvan Rivas
+Fundamentos de programaciòn
+Actividad 2 Funciones 
+
+ -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Actividad 3</title>
+</head>
+<body>
+    <div class="container main-container">
+        
+      
+        <div class="col-8 col-sx-8 col-sm-8 col-md-8 col-lg-8">
+          <div class="row">
+            <h1>Universidad de Guadalajara virtual</h1>
+            <h2>Héctor Rosendo Galván Rivas</h2>
+            <h2>Fundamentos de programación</h2>
+            <h3>Actividades 3 condicionales</h3>
+            
+          </div>
+            <table style="width:100%" class="table table-striped">
+                <caption>Pizzas</caption>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Pizza</th>
+                  <th>precio</th>
+                </tr>
+                <tr>
+                  <td>A</td>
+                  <td>hawaiana</td>
+                  <td>$10</td>
+                </tr>
+                <tr>
+                  <td>B</td>
+                  <td>peperoni</td>
+                  <td>$15</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>conbinada</td>
+                    <td>$20</td>
+                </tr>
+              </table>
+
+              <table style="width:100%" class="table table-striped">
+                <caption>Codigos de Descuentos</caption>
+                <tr>
+                  <th>Codigo</th>
+                  <th>Descuento</th>
+                </tr>
+                <tr>
+                  <td>cupon1</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>cupon2</td>
+                  <td>20%</td>
+                </tr>
+              </table>
+
+              <div class="row">
+                <div class="col" >
+                    <form action="" id="miformulario">
+                        <label for="">Ingresa el codigo de la pizza que deseas</label><br>
+                        <input type="text" id="pizza_" placeholder="A,B O C"> <br>
+                        <label for="">Ingrea el codigo del descuento</label><br>
+                        <input type="text" id="descuento" placeholder="cupon1 O cupon2"> <br>
+                        
+                        <br>
+                        <button type="button" onclick="pizza();">calcular el total</button>
+                        <button onclick="limpiar();">Limpiar campos</button><br>
+                        <br>
+                        <a>El  total es :<span id="el_resultado_pizza"></span></a><br>
+                       
+    
+                    </form>
+                </div>
+        </div>
+
+ 
+     
+
+    </div>
+    </div>
+    <script src="pizzeria.js"></script>
+</body>
+</html>
+
+<!-- ----------------------------final de archivo html--------------------------------------------- -->
