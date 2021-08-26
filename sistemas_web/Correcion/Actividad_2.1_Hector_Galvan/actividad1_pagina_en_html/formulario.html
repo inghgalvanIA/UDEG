@@ -1,0 +1,85 @@
+<!-- Héctor Rosendo Galván Rivas
+numero: 221968633 
+LICENCIATURA EN DESARROLLO DE SISTEMAS WEB 
+Principios de diseño web
+profesor: Rafael Morales Gamboa -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="icon" type="image/png" href="images/nick_minipng">
+</head>
+<body>
+    
+    <!-- seccion header -->
+    <header class="header">
+        <img class="header_img" src="images/nick.jpg" alt="logo_nick">
+        <div class="header_menu">
+            <a href="index.html">inicio</a>
+            <a href="descripcion.html">descripcion</a>
+            <a href="historia.html">historia</a>
+            <a href="testimonios.html">testimonios</a>
+            <a href="formulario.html">from reservacion</a>
+            <a href="video.html">mas info</a>
+        </div>
+    </header>
+    <!-- seccion central -->
+    <main>
+        <section>
+            <h1>Realiza tu reservacion</h1><br>
+            <h3>llene la siguiente informacion </h3><br>
+
+            <form action="">
+                <label for="nombre">
+                    <span>Nombre</span>
+                    <input type="text" id="nombre" placeholder="Nombre(s)">
+                </label>
+            
+
+            <label for="apellidos_paterno">
+                <span>Apellidos paterno</span>
+                <input type="text" id="apellido_paterno" placeholder="Apellido paterno">
+            </label>
+
+            <label for="apellidos_materno">
+                <span>Apellidos materno</span>
+                <input type="text" id="apellido_materno" placeholder="Apellido materno">
+            </label>
+
+            <label for="cumpleaños">
+                <span> Fecha de cumpleaños</span>
+                <input type="date" id="cumpleaños">
+            </label>
+            <br>
+
+            <!-- fechas a reservar -->
+
+            <label for="calendario">
+                <span> Fecha de  entrada</span>
+                <input type="datetime-local" id="calendario" name="calendario">
+            </label>
+
+            <br>
+
+            <label for="calendario">
+                <span> Fecha de salida</span>
+                <input type="datetime-local" id="calendario" name="calendario">
+            </label>
+
+
+            <input type="submit">
+
+            </form>
+        </section>
+    </main>
+    
+        <footer>alumno Hector Galvan</footer>
+        
+
+</body>
+</html>
