@@ -1,0 +1,114 @@
+<!-- inicio archivo html con nombre index.html -->
+
+<!-- Hector Rosendo Galvan Rivas
+id estudiante:221968633
+Fundamentos de programaciòn
+Actividad 2 - Intervalos de actualización de la pantalla
+ -->
+
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+     <title>Actividad 2</title>
+     <style>
+        
+p{
+    font-size: 34px;
+}
+
+.wrap {
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.widget{
+    width: 40%;
+    margin: 2em;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.fecha{
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 0.3125rem;
+    padding: 20px;
+    width: 100%;
+}
+
+.reloj{
+   
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+     </style>
+ </head>
+ <body>
+     <section id= "presentacion">
+        <div class="row">
+            <div class="col-3 col-sx-3 col-sm-3 col-md-3 col-lg-3">
+                <img src="http://www.inghgalvan.xyz/images/udeg.png" alt="udg">
+            </div>
+            <div class="col-9 col-sx-9 col-sm-9 col-md-9 col-lg-9">
+                <br>
+                
+                <h1>Universidad de Guadalajara virtual</h1>
+                <h2>Héctor Rosendo Galván Rivas</h2>
+                <h2>Fundamentos de programación</h2>
+                <h4>Actividad 2 - Intervalos de actualización de la pantallas</h4>
+            
+            </div>
+        </div>
+     </section>
+
+   <section class="text-center">
+       <h1>Hora actual </h1>
+    <div class="row">
+        <div class="col text-center">
+            <div class="wrap">
+                <div class="widget">
+                    <div class="fecha">
+                        <p id="diaSemana" class="diaSemana"></p>
+                        <p id="dia" class="dia"></p>
+                        <p>de</p>
+                        <p id="mes" class="mes"></p>
+                        <p>del</p>
+                        <p id="year" class="year"></p>
+                    </div>
+        
+                    <div class="reloj">
+                        <p id="horas" class="horas"></p>
+                        <p>:</p>
+                        <p id="minutos" class="minutos"></p>
+                        <p>:</p>
+                        <p id="segundos" class="segundos"></p>
+                        <p id="ampm" class="ampm"></p>
+                            
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+   </section>
+   
+
+
+     <script src="reloj.js"></script>
+ </body>
+ </html>
+ 
+ <!-- final archivo html con nombre index.html -->
