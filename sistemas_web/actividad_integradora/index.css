@@ -1,0 +1,86 @@
+
+.text-comprar{
+    color: #064acb !important;
+}
+
+#banner {
+    width: 100%;
+}
+
+
+#img_1{
+    height:100%;
+    width: 100%;
+     
+}
+
+#let_1{
+    background-color: #064acb;
+    height: 150px;
+}
+
+#let_1 h2{
+    color: white;
+    text-align:center;
+}
+
+#let_1_2 {
+    text-align: justify;
+}
+
+#sec_productos h1 {
+    margin-top: 30px;
+    color: #064acb;
+    text-align: center;
+}
+
+#sec_productos h3 {
+
+    text-align: center;
+}
+
+#sec_productos_img img{
+    width: 100%;
+}
+
+#sec_productos_img h2{
+    color: white;
+    background-color: #064acb;
+    text-align: center;
+
+}
+
+#datos_contacto{
+
+    width: 100%;
+}
+
+#datos{
+
+    width: 100%;
+}
+
+#datos h3{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#datos p{
+    text-align:center;
+    margin-top: 20px;
+}
+
+#banner_contacto{
+    width: 100%;
+}
+
+#redes h3{
+    text-align: center;
+}
+
+#redes img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
