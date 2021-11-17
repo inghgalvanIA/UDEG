@@ -1,0 +1,80 @@
+<!-- UDG Virtual
+Alumno: Hèctor Rosendo Galvàn Rivas
+Fundamentos de programaciòn
+Actividad 4 - Métodos gráficos y matemáticos
+Profesora: Marìa Luisa Garcia Sànchez
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>arte digital</title>
+<style>
+.card{
+
+width: 400px;
+height: 400px;
+background: blue;
+border-radius: 20px;
+overflow: hidden;
+margin-left: 35%;
+}
+
+.card img{
+width: 60%;
+height: 60%;
+margin-left: 20%;
+margin-top: 5%;
+}
+.card p {
+text-align: center;
+color: white;
+}
+
+</style>
+
+</head>
+<body>
+<section>
+<div class="card">
+<img src="http://www.inghgalvan.xyz/images/udeg.png" alt="">
+<p>Universidad de Guadalajara Virtual</p>
+<P>Alumno: Hector Rosendo Galvan Rivas</P>
+<p>Fundamentos de programaciòn</p>
+<p>Actividad 4 - Métodos gráficos y matemáticos</p>
+</div>
+</section>
+
+<section>
+<canvas id="myCanvas" width = "1300" height = "1000"></canvas>
+</section>
+<script>// requestAnimationFrame Shim
+
+function draw (){
+
+for(var i=0;i < 100;i++){
+var colores = ['aqua', 'black', 'blue', 'fuchsia', 'gray', 'green', 'lime', 'maroon', 'navy', 'olive', 'orange', 'purple', 'red', 'silver', 'teal', 'white', 'yellow'];
+var posicion_color = Math.round(Math.random() * (16 - 0) + 0);
+var posicion_x = Math.round(Math.random() * (1300 - 0) + 0);
+var posicion_y = Math.round(Math.random() * (1000 - 0) + 0);
+var radio = Math.round(Math.random() * (200 - 0) + 0);
+console.log(posicion_color)
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = colores[posicion_color];
+ctx.beginPath();
+ctx.arc(posicion_x, posicion_y, radio, 0, 2 * Math.PI);
+ctx.stroke();
+ctx.fill();
+}
+}
+draw();
+
+</script>
+</body>
+</html>

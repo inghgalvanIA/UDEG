@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarjeta</title>
+<style>
+.card{
+
+width: 400px;
+height: 400px;
+background: rgb(151, 83, 219);
+border-radius: 20px;
+overflow: hidden;
+margin-left: 35%;
+}
+
+.card img{
+width: 60%;
+height: 60%;
+margin-left: 20%;
+margin-top: 5%;
+}
+.card p {
+text-align: center;
+color: white;
+}
+
+</style>
+
+</head>
+<body>
+<section>
+<div class="card">
+<img src="http://www.inghgalvan.xyz/images/udeg.png" alt="">
+<p>Universidad de Guadalajara Virtual</p>
+<P>Alumno: Hector Rosendo Galvan Rivas</P>
+<p>Fundamentos de programaciòn</p>
+<p>Actividad 3 - Animando con JavaScript</p>
+</div>
+</section>
+
+<section>
+<canvas id="canvas" width = "400" height = "300"></canvas>
+</section>
+<script>// requestAnimationFrame Shim
+
+
+function draw()
+
+  {
+
+var canvas = document.getElementById('canvas');
+
+if (canvas.getContext)
+
+{
+
+var ctx = canvas.getContext('2d'); 
+var X = canvas.width / 2;
+var Y = canvas.height / 2;
+var R = 45;
+ctx.beginPath();
+ctx.arc(X, Y, R, 0, 2 * Math.PI, false);
+ctx.lineWidth = 3;
+ctx.strokeStyle = '#FF0000';
+ctx.stroke();
+}
+}
+
+draw();
+
+
+
+</script>
+</body>
+</html>

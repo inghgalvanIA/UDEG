@@ -22,7 +22,7 @@ for (var i = 0; i <= 2; i = i + 0.2) {
   ctx.beginPath();
   ctx.lineWidth = 5;
   ctx.arc(190 * i - 10 ,150,15,0, Math.PI * i, false);
-  // document.write("Angulo final " + Math.PI * i + "<br>");
+  document.write("Angulo final " + Math.PI * i + "<br>");
   ctx.stroke();
   ctx.fill();
 }
