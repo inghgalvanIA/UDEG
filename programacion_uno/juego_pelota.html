@@ -1,0 +1,95 @@
+<!-- UDG Virtual
+Alumno: Hèctor Rosendo Galvàn Rivas
+Fundamentos de programaciòn
+Actividad integradora - Animación con simulación física
+Profesora: Marìa Luisa Garcia Sànchez
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>juego pelota</title>
+<style>
+.card{
+
+width: 400px;
+height: 400px;
+background: blue;
+border-radius: 20px;
+overflow: hidden;
+margin-left: 35%;
+}
+
+.card img{
+width: 60%;
+height: 60%;
+margin-left: 20%;
+margin-top: 5%;
+}
+.card p {
+text-align: center;
+color: white;
+}
+
+</style>
+
+</head>
+<body>
+<section>
+<div class="card">
+<img src="http://www.inghgalvan.xyz/images/udeg.png" alt="">
+<p>Universidad de Guadalajara Virtual</p>
+<P>Alumno: Hector Rosendo Galvan Rivas</P>
+<p>Numero registro:221968633</p>
+<p>Fundamentos de programaciòn</p>
+<p>Actividad integradora - Animación con simulación física</p>
+</div>
+</section>
+
+<section>
+<canvas id="myCanvas" width = "1300" height = "600"></canvas>
+</section>
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+var radio_pelota = 30;
+var x = canvas.width/2;
+var y = canvas.height-30;
+var dx = 2;
+var dy = -2;
+
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, radio_pelota, 0, Math.PI*2);
+    ctx.fillStyle = "blue";
+    ctx.fill();
+    ctx.closePath();
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+   
+    if(x + dx > canvas.width-radio_pelota || x + dx < radio_pelota) {
+        dx = -dx;
+    }
+    if(y + dy > canvas.height-radio_pelota || y + dy < radio_pelota) {
+        dy = -dy;
+    }
+   
+    x += dx;
+    y += dy;
+}
+
+setInterval(draw, 10);
+
+</script>
+</body>
+</html>
