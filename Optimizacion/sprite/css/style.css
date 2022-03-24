@@ -1,0 +1,103 @@
+
+.card{
+
+    width: 400px;
+    height: 425px;
+    background: #0a3098;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 35%;
+    }
+    
+.card img{
+    width: 60%;
+    height: 60%;
+    margin-left: 20%;
+    margin-top: 5%;
+    }
+.card p {
+    text-align: center;
+    color: white;
+    }
+
+ #cuerpo_cuento{
+     background: #05d3f1;
+     height: 1000px;
+ }   
+
+ #cuerpo_cuento h1{
+     color: white;
+     margin-top: 20px;
+     margin-bottom: 20px;
+ }
+
+
+h1{
+    text-align:center;
+    margin-top: 20px;
+}
+
+.sprite{
+    width:200px;
+    height:200px;
+    display:block;
+    background:red;
+}
+
+.container{
+    width: 99%;
+   
+    margin: 1em auto;
+    box-shadow: 0 0 1em rgba(0,0,0,.2);
+    padding: 2em
+}
+
+.tabla-contenidos{
+    display: table;
+    width:100%;
+    border:solid 0.123rem #ccc;
+    border-radius: 0.3em;
+}
+
+.tabla-contenidos .enlace{
+    width:25%;
+    display:table-cell;
+    text-align:center;
+    padding:1em;
+}
+
+.icono-uno{
+    width:128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto 1em auto; 
+    background:url(../images/sprite_dos.png)no-repeat;
+    background-position: 0 -10px;
+}
+
+.icono-dos{
+    width:128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto 1em auto; 
+    background:url(../images/sprite_dos.png)no-repeat;
+    background-position: -150px -10px;
+}
+
+.icono-tres{
+    width:128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto 1em auto; 
+    background:url(../images/sprite_dos.png)no-repeat;
+    background-position: -270px -10px;
+}
+
+.icono-cuatro{
+    width:128px;
+    height: 128px;
+    display: block;
+    margin: 0 auto 1em auto; 
+    background:url(../images/sprite_dos.png)no-repeat;
+    background-position: -390px -10px;
+}

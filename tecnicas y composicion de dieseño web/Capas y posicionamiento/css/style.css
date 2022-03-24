@@ -1,0 +1,98 @@
+
+/* UDG Virtual
+Alumno: Hèctor Rosendo Galvàn Rivas
+Técnicas de composición y diseño Webn
+Unidad 2 - Diseño con capas, colores y tipografías
+Profesora: Diana Gutierrez Muñoz */
+
+* {
+     margin:0;
+     padding: 0;
+  
+} 
+
+.encabezado, .pie-pag {
+  background-color: grey;
+  color: white;
+  
+  
+}
+
+.encabezado{
+    height:100px;
+    line-height: 100px;
+    text-align: middle;
+}
+
+.encabezado h1{
+    padding-left: 10px;
+}
+
+
+.columna {
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.menu {
+  width: 25%;
+  height: 150px;
+  float:left;
+  padding-top: 10px;
+}
+
+.contenido {
+  width: 75%;
+  height: 25%;
+  background-color: lightblue;
+  float: right;
+  margin:0;
+  
+}
+
+.contenido p {
+    font-weight: bold;
+}
+
+.contenido h1{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.contenido p{
+    padding-top: 20px;
+    padding-left: 10px;
+
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  background-color: #33b5e5;
+  color: #ffffff;
+  margin:10px;
+  padding:10px;
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.pie-pag{
+    height: 60px;
+    line-height: 40px;
+    text-align: middle;
+}
+
+.pie-pag p{
+    padding: 10px;
+}

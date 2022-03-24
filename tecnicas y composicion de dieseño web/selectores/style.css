@@ -1,0 +1,33 @@
+* 
+{ font: 1em/1.3 Arial, Helvetica, sans-serif; }
+
+p
+{ color: #4F555D; }
+
+#titulo >  p
+{ color: #1D3461;  }                                                          
+
+a
+{ color: #6290C8 }
+
+#titulo > p >em 
+{ background: #C9FBFF; 
+  padding: .1em; }
+
+  
+
+.cita 
+{ background: #E0FBFC; 
+  border: 1px solid #C9FBFF; 
+  padding: .1em; }
+
+   
+.contenido   span
+{ font-weight: bold; }
+
+.creditos > p
+{ font: .9em/1.3 Arial, Helvetica, sans-serif; 
+  font-weight: 600; }
+
+a:hover
+{ background-color: #08e; color:white; } 
